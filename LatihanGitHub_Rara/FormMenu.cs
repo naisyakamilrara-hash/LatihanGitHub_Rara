@@ -16,5 +16,22 @@ namespace LatihanGitHub_Rara
         {
             InitializeComponent();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var pilihan = MessageBox.Show("Tutup form?",
+                "konfirmasi", MessageBoxButtons.YesNo);
+
+            if (pilihan == DialogResult.Yes) ;
+            {
+                Close();
+            }
+
+            if (pilihan == DialogResult.No) ;
+            {
+                Close();
+            }
+
+        }
     }
 }
