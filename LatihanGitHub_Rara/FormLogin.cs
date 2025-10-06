@@ -38,24 +38,33 @@ namespace LatihanGitHub_Rara
                 MessageBox.Show("Login Berhasil!!");
                 FormMenu fd = new FormMenu();
                 fd.ShowDialog();
+                txtUsername.Clear();
+                txtPassword.Clear();
+
             }
             if (txtUsername.Text == "Aura" && txtPassword.Text == "150208")
             {
                 MessageBox.Show("Login Berhasil!!");
                 FormMenu fd = new FormMenu();
                 fd.ShowDialog();
+                txtUsername.Clear();
+                txtPassword.Clear();
             }
             if (txtUsername.Text == "Tata" && txtPassword.Text == "030508")
             {
                 MessageBox.Show("Login Berhasil!!");
                 FormMenu fd = new FormMenu();
                 fd.ShowDialog();
+                txtUsername.Clear();
+                txtPassword.Clear();
             }
             if (txtUsername.Text == "Yasmin" && txtPassword.Text == "271208")
             {
                 MessageBox.Show("Login Berhasil!!");
                 FormMenu fd = new FormMenu();
                 fd.ShowDialog();
+                txtUsername.Clear();
+                txtPassword.Clear();
             }
             else
             {
