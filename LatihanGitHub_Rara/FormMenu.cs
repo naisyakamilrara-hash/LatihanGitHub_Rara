@@ -42,7 +42,8 @@ namespace LatihanGitHub_Rara
 
         private void jurusanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormJurusan fs = new FormJurusan();
+            fs.ShowDialog();
         }
     }
 }
