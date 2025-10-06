@@ -64,6 +64,7 @@
             this.siswaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.siswaToolStripMenuItem.Size = new System.Drawing.Size(284, 34);
             this.siswaToolStripMenuItem.Text = "Siswa";
+            this.siswaToolStripMenuItem.Click += new System.EventHandler(this.siswaToolStripMenuItem_Click);
             // 
             // jurusanToolStripMenuItem
             // 
