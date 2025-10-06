@@ -73,6 +73,7 @@
             | System.Windows.Forms.Keys.G)));
             this.jurusanToolStripMenuItem.Size = new System.Drawing.Size(284, 34);
             this.jurusanToolStripMenuItem.Text = "Jurusan";
+            this.jurusanToolStripMenuItem.Click += new System.EventHandler(this.jurusanToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 

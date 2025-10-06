@@ -36,6 +36,12 @@ namespace LatihanGitHub_Rara
 
         private void siswaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            FormSiswa fs = new FormSiswa();
+            fs.ShowDialog();
+        }
+
+        private void jurusanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
     }
