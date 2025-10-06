@@ -15,6 +15,7 @@ namespace LatihanGitHub_Rara
         public FormMenu()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
