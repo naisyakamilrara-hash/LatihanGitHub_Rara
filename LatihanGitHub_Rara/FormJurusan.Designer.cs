@@ -32,18 +32,21 @@
             this.lblJurusan = new System.Windows.Forms.Label();
             this.txtNama = new System.Windows.Forms.TextBox();
             this.lbljurusanSiswa = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmdJurusan = new System.Windows.Forms.ComboBox();
             this.btnSimpan = new System.Windows.Forms.Button();
-            this.btnHapus = new System.Windows.Forms.Button();
-            this.btnKembali = new System.Windows.Forms.Button();
+            this.btnTutup = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Jurusan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNama
             // 
             this.lblNama.AutoSize = true;
-            this.lblNama.Location = new System.Drawing.Point(12, 55);
+            this.lblNama.Location = new System.Drawing.Point(51, 44);
             this.lblNama.Name = "lblNama";
-            this.lblNama.Size = new System.Drawing.Size(51, 20);
+            this.lblNama.Size = new System.Drawing.Size(44, 16);
             this.lblNama.TabIndex = 0;
             this.lblNama.Text = "Nama";
             this.lblNama.Click += new System.EventHandler(this.label1_Click);
@@ -51,85 +54,110 @@
             // lblJurusan
             // 
             this.lblJurusan.AutoSize = true;
-            this.lblJurusan.Location = new System.Drawing.Point(12, 99);
+            this.lblJurusan.Location = new System.Drawing.Point(51, 79);
             this.lblJurusan.Name = "lblJurusan";
-            this.lblJurusan.Size = new System.Drawing.Size(66, 20);
+            this.lblJurusan.Size = new System.Drawing.Size(54, 16);
             this.lblJurusan.TabIndex = 1;
             this.lblJurusan.Text = "Jurusan";
             // 
             // txtNama
             // 
-            this.txtNama.Location = new System.Drawing.Point(102, 55);
+            this.txtNama.Location = new System.Drawing.Point(131, 44);
+            this.txtNama.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNama.Name = "txtNama";
-            this.txtNama.Size = new System.Drawing.Size(323, 26);
+            this.txtNama.Size = new System.Drawing.Size(196, 22);
             this.txtNama.TabIndex = 2;
             // 
             // lbljurusanSiswa
             // 
             this.lbljurusanSiswa.AutoSize = true;
-            this.lbljurusanSiswa.Location = new System.Drawing.Point(154, 9);
+            this.lbljurusanSiswa.Location = new System.Drawing.Point(141, 9);
             this.lbljurusanSiswa.Name = "lbljurusanSiswa";
-            this.lbljurusanSiswa.Size = new System.Drawing.Size(112, 20);
+            this.lbljurusanSiswa.Size = new System.Drawing.Size(93, 16);
             this.lbljurusanSiswa.TabIndex = 3;
             this.lbljurusanSiswa.Text = "Jurusan Siswa";
             this.lbljurusanSiswa.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // comboBox1
+            // cmdJurusan
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmdJurusan.FormattingEnabled = true;
+            this.cmdJurusan.Items.AddRange(new object[] {
             "RPL",
             "TKJ",
             "Multimedia",
             ""});
-            this.comboBox1.Location = new System.Drawing.Point(102, 99);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(105, 28);
-            this.comboBox1.TabIndex = 4;
+            this.cmdJurusan.Location = new System.Drawing.Point(131, 79);
+            this.cmdJurusan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdJurusan.Name = "cmdJurusan";
+            this.cmdJurusan.Size = new System.Drawing.Size(191, 24);
+            this.cmdJurusan.TabIndex = 4;
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(102, 165);
+            this.btnSimpan.Location = new System.Drawing.Point(105, 120);
+            this.btnSimpan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(75, 27);
+            this.btnSimpan.Size = new System.Drawing.Size(73, 33);
             this.btnSimpan.TabIndex = 5;
-            this.btnSimpan.Text = "Simpan";
+            this.btnSimpan.Text = "SIMPAN";
             this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
-            // btnHapus
+            // btnTutup
             // 
-            this.btnHapus.Location = new System.Drawing.Point(191, 165);
-            this.btnHapus.Name = "btnHapus";
-            this.btnHapus.Size = new System.Drawing.Size(75, 27);
-            this.btnHapus.TabIndex = 6;
-            this.btnHapus.Text = "Hapus";
-            this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnTutup.Location = new System.Drawing.Point(198, 120);
+            this.btnTutup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTutup.Name = "btnTutup";
+            this.btnTutup.Size = new System.Drawing.Size(70, 33);
+            this.btnTutup.TabIndex = 6;
+            this.btnTutup.Text = "TUTUP";
+            this.btnTutup.UseVisualStyleBackColor = true;
+            this.btnTutup.Click += new System.EventHandler(this.btnTutup_Click);
             // 
-            // btnKembali
+            // dataGridView1
             // 
-            this.btnKembali.Location = new System.Drawing.Point(286, 165);
-            this.btnKembali.Name = "btnKembali";
-            this.btnKembali.Size = new System.Drawing.Size(75, 27);
-            this.btnKembali.TabIndex = 7;
-            this.btnKembali.Text = "Kembali";
-            this.btnKembali.UseVisualStyleBackColor = true;
-            this.btnKembali.Click += new System.EventHandler(this.btnKembali_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nama,
+            this.Jurusan});
+            this.dataGridView1.Location = new System.Drawing.Point(13, 162);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(348, 151);
+            this.dataGridView1.TabIndex = 7;
+            // 
+            // Nama
+            // 
+            this.Nama.HeaderText = "Nama";
+            this.Nama.MinimumWidth = 6;
+            this.Nama.Name = "Nama";
+            this.Nama.Width = 125;
+            // 
+            // Jurusan
+            // 
+            this.Jurusan.HeaderText = "Jurusan";
+            this.Jurusan.MinimumWidth = 6;
+            this.Jurusan.Name = "Jurusan";
+            this.Jurusan.Width = 125;
             // 
             // FormJurusan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 277);
-            this.Controls.Add(this.btnKembali);
-            this.Controls.Add(this.btnHapus);
+            this.ClientSize = new System.Drawing.Size(389, 357);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnTutup);
             this.Controls.Add(this.btnSimpan);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmdJurusan);
             this.Controls.Add(this.lbljurusanSiswa);
             this.Controls.Add(this.txtNama);
             this.Controls.Add(this.lblJurusan);
             this.Controls.Add(this.lblNama);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormJurusan";
             this.Text = "FormJurusan";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,9 +169,11 @@
         private System.Windows.Forms.Label lblJurusan;
         private System.Windows.Forms.TextBox txtNama;
         private System.Windows.Forms.Label lbljurusanSiswa;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmdJurusan;
         private System.Windows.Forms.Button btnSimpan;
-        private System.Windows.Forms.Button btnHapus;
-        private System.Windows.Forms.Button btnKembali;
+        private System.Windows.Forms.Button btnTutup;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nama;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Jurusan;
     }
 }
